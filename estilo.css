@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.login-container {
+  display: flex;
+  width: 800px; 
+  height: 510px; 
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 24px; 
+  overflow: hidden;
+}
+
+.login-form {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form img {
+  width: 200px; 
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 12px; /* Reduz o tamanho do texto das labels */
+
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.login-form button {
+  width: 60%;
+  padding: 10px;
+  background-color: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 20px; 
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.login-form button:hover {
+  background-color: #a50000;
+}
+
+.login-image {
+  width: 50%;
+  background-image: url('imagens/new-mobile-website-banner-wood-recip.jpg');
+  background-size: cover;
+  background-position: center;
+}
