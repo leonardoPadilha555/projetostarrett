@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial - Starrett</title>
+  <link rel="stylesheet" href="estiloinicial.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <img src="imagens/sketch1731195414958.png" alt="Logo Starrett" class="logo">
+    
+    <div class="search-container">
+      <input type="text" placeholder="Pesquisar Ocorrência" class="search-input">
+      <select class="search-select">
+        <option value="nome">NOME</option>
+        <option value="af">AF</option>
+        <option value="setor">SETOR</option>
+      </select>
+    </div>
+    
+    <nav class="menu">
+      <a href="#">Adicionar Ocorrência</a>
+      <a href="#">Histórico de Ocorrências</a>
+      <a href="#">Configuração</a>
+    </nav>
+  </div>
+  
+  <div class="expand-button" onclick="toggleSidebar()">
+    <span>&lt;</span>
+  </div>
+  
+  <div class="content">
+  
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const expandButton = document.querySelector('.expand-button span');
+      sidebar.classList.toggle('collapsed');
+
+      if (sidebar.classList.contains('collapsed')) {
+        expandButton.innerHTML = '>';
+      } else {
+        expandButton.innerHTML = '<';
+      }
+    }
+  </script>
+</body>
+</html>
